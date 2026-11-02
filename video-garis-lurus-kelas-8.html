@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persamaan Garis Lurus — Matematika Kelas 8</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#fff7ed;color:#1e293b}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px 48px}
+h1{color:#0f766e;margin:8px 0 4px}.sub{color:#64748b;margin:0 0 16px}
+video{width:100%;border-radius:12px;background:#000}
+.chapters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.chapters button{border:1px solid #0f766e;background:#fff;color:#0f766e;border-radius:999px;padding:8px 12px;cursor:pointer;font-size:14px}
+.chapters button:hover{background:#0f766e;color:#fff}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px}
+a.dl{display:inline-block;background:#ea580c;color:#fff;text-decoration:none;padding:10px 16px;border-radius:8px;margin-top:12px}
+.err{display:none;background:#fee2e2;color:#991b1b;border-radius:8px;padding:12px;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Persamaan Garis Lurus</h1>
+<p class="sub">Matematika Kelas 8 &bull; Bab 5 &bull; Durasi 10 menit &bull; Narasi Bahasa Indonesia</p>
+<video id="v" controls preload="metadata" playsinline>
+<source src="video-garis-lurus-kelas-8.mp4" type="video/mp4">
+</video>
+<div class="err" id="err">Video tidak dapat diputar. Pastikan file <b>video-garis-lurus-kelas-8.mp4</b> berada di folder yang sama dengan file HTML ini, lalu muat ulang halaman.</div>
+<p><b>Bab:</b> klik untuk melompat ke bagian yang diinginkan.</p>
+<div class="chapters">
+<button data-t="0">Pembuka 0:00</button>
+<button data-t="45">Grafik Garis Lurus 0:45</button>
+<button data-t="135">Gradien dari Grafik 2:15</button>
+<button data-t="200">Gradien dari Dua Titik 3:20</button>
+<button data-t="263">Gradien dari Persamaan 4:23</button>
+<button data-t="327">Menentukan Persamaan Garis 5:27</button>
+<button data-t="400">Sejajar &amp; Tegak Lurus 6:40</button>
+<button data-t="472">Soal Cerita &amp; Rangkuman 7:52</button>
+</div>
+<div class="card">
+<b>Yang dipelajari:</b>
+<ul>
+<li>Bentuk umum garis lurus <b>y = mx + c</b></li>
+<li>Gradien dari grafik, dua titik, dan persamaan</li>
+<li>Menentukan persamaan garis dari titik dan gradien</li>
+<li>Garis sejajar (m1 = m2) dan tegak lurus (m1 &times; m2 = &minus;1)</li>
+<li>Soal cerita taksi, 3 soal latihan, dan rangkuman</li>
+</ul>
+<a class="dl" href="video-garis-lurus-kelas-8.mp4" download>⬇ Unduh video (MP4, 11 MB)</a>
+</div>
+</div>
+<script>
+var v=document.getElementById('v');
+document.querySelectorAll('.chapters button').forEach(function(b){
+  b.addEventListener('click',function(){v.currentTime=parseFloat(b.dataset.t);v.play();});
+});
+v.addEventListener('error',function(){document.getElementById('err').style.display='block';});
+</script>
+</body>
+</html>
